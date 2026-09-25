@@ -55,17 +55,15 @@ else:
 
 #the user will imput a number and numbers that are above 68 will get hot,68 will print perfect and below that it will print cold
 '''
-num=input("A number")
-if num/2==int():
+
+num=int(input("A number"))
+if num % 2 ==0:
     print("It's even")
-elif num/2 int():
+elif num % 2==1:
     print("It's odd")
 
 bill=input("How much was the bill")
-tip=input("How was the service 0%,15%,20%,25%")
-if tip=="0%"or "0":
-    print("total is" bill)
-if tip=="15%" or "15" or "20%" or "20" or "25%" or "25":
-    print out ("Your total is" bill*tip)
+
+
 
 
