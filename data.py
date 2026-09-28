@@ -54,7 +54,7 @@ else:
     print("cold")
 
 #the user will imput a number and numbers that are above 68 will get hot,68 will print perfect and below that it will print cold
-'''
+
 
 num=int(input("A number"))
 if num % 2 ==0:
@@ -62,8 +62,21 @@ if num % 2 ==0:
 elif num % 2==1:
     print("It's odd")
 
-bill=input("How much was the bill")
-
-
-
-
+bill=float(input("How much was the bill"))
+service= input("how was the service")
+if service=="ok":
+    print(bill*1.15)
+elif service=='great':
+    print(bill*1.2)
+elif service=='amazing':
+    print(bill*1.25)
+elif service=='horrible':
+    print(bill*1)
+else:
+    print("error")
+'''
+def factor(x,y):
+    factor=input("input")
+    if factor== x*y:
+        for i in range(x,y):
+            factor=int(1,factor+1)
