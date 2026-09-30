@@ -74,9 +74,22 @@ elif service=='horrible':
     print(bill*1)
 else:
     print("error")
-'''
+
 def factor(x,y):
     factor=input("input")
     if factor== x*y:
         for i in range(x,y):
             factor=int(1,factor+1)
+'''
+def spaces(N,Y,T):
+    N=input("how many spaces")
+a=0
+N=5
+Y=['C','C','.','.','C']
+T=['.','C','C','.','.']
+for i in range(N):
+    if Y[i]==T[i] and Y[i]=="C":
+        a=a+1
+print("There are "+ str(a) +" spaces that were free for two days in a row")
+
+
