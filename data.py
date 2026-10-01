@@ -82,14 +82,23 @@ def factor(x,y):
             factor=int(1,factor+1)
 '''
 def spaces(N,Y,T):
-    N=input("how many spaces")
-a=0
-N=5
-Y=['C','C','.','.','C']
-T=['.','C','C','.','.']
-for i in range(N):
-    if Y[i]==T[i] and Y[i]=="C":
-        a=a+1
+
+    a=0
+    N = int(input("How many spaces? "))
+    Y = list(input("Enter day 1 status (C for occupied, . for free): "))
+    T = list(input("Enter day 2 status (C for occupied, . for free): "))
+    for i in range(N):
+        if Y[i]==T[i] and Y[i]=="C":
+            a=a+1
 print("There are "+ str(a) +" spaces that were free for two days in a row")
 
 
+def equal_ignore_case(T,S):
+    lines=input("Give me a sentence")
+    for i in range(len(lines)):
+        if lines[i]==T > lines[i]==S:
+            print("It's probably French")
+        elif lines[i]==T < lines[i]==S:
+            print("It's probably English")
+        elif lines[i]==T == lines[i]==S:
+            print("It's probably French bagetts")
