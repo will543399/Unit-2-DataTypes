@@ -74,13 +74,23 @@ elif service=='horrible':
     print(bill*1)
 else:
     print("error")
+'''
+def factor_num(answer):
+    fact=0
+    answer=int(input("Insert a factor"))
+    for i in range(1,answer+1):
+        if num% i == 0:
+            print  (f"{i} is a factor of {answer}")
+        elif answer :
+            fact=fact+1
+num
 
-def factor(x,y):
+""" def factor(x,y):
     factor=input("input")
     if factor== x*y:
         for i in range(x,y):
             factor=int(1,factor+1)
-'''
+
 def spaces(N,Y,T):
 
     a=0
@@ -101,4 +111,4 @@ def equal_ignore_case(T,S):
         elif lines[i]==T < lines[i]==S:
             print("It's probably English")
         elif lines[i]==T == lines[i]==S:
-            print("It's probably French bagetts")
+            print("It's probably French bagetts") """
