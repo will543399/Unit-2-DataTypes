@@ -75,15 +75,24 @@ elif service=='horrible':
 else:
     print("error")
 '''
-def factor_num(answer):
-    fact=0
+def factor_num():
     answer=int(input("Insert a factor"))
     for i in range(1,answer+1):
-        if num% i == 0:
-            print  (f"{i} is a factor of {answer}")
-        elif answer :
-            fact=fact+1
-num
+        if answer% i == 0:
+            print(f"{i} is a factor of {answer}")
+factor_num()
+def great_num():
+    gcf=0
+    answer_num1=int(input("insert a number"))
+    answer_num2=int(input("insert another number"))
+    limit=min(answer_num1,answer_num2)
+    for i in range(1,limit+1):
+        if answer_num1%i==0 and answer_num2%i==0:
+            print(f'{i}" is a factor of "{answer_num1}+ {answer_num2}')
+            gcf=i
+
+great_num()
+print(gcf)
 
 """ def factor(x,y):
     factor=input("input")
