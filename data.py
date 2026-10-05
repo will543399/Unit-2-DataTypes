@@ -82,7 +82,7 @@ def factor_num():
             print(f"{i} is a factor of {answer}")
 factor_num()
 def great_num():
-    gcf=0
+    gcf=1
     answer_num1=int(input("insert a number"))
     answer_num2=int(input("insert another number"))
     limit=min(answer_num1,answer_num2)
@@ -92,7 +92,6 @@ def great_num():
             gcf=i
 
 great_num()
-print(gcf)
 
 """ def factor(x,y):
     factor=input("input")
